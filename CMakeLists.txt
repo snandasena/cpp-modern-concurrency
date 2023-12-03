@@ -7,5 +7,11 @@ set(CMAKE_CXX_FLAGS "-fsanitize=address -ggdb3 -Wall  -ansi  -Wextra -Wpedantic"
 #add_executable(JthreadDemo src/jthread_demo.cpp)
 #target_link_libraries(JthreadDemo -pthread)
 
-add_executable(YieldDemo src/yield_demo.cpp)
-target_link_libraries(YieldDemo -pthread)
+#add_executable(YieldDemo src/yield_demo.cpp)
+#target_link_libraries(YieldDemo -pthread)
+
+#add_executable(AsyncDemo src/async.cpp)
+#target_link_libraries(AsyncDemo -pthread)
+
+add_executable(CoroutineDemo src/coroutines.cpp)
+target_link_libraries(CoroutineDemo -pthread)
